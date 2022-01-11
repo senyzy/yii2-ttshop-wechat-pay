@@ -1,21 +1,23 @@
 {
-  "name": "senyzy/yii2-ttshop-wechat-pay",
-  "description": "Wechat",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "senyzy",
-      "email": "senyzy@foxmail.com"
+    "name": "senyzy/yii2-ttshop-wechat-pay",
+    "description": "Wechat payment of yii2",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "doctrine/cache": "^2.1",
+        "curl/curl": "^2.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "senyzy",
+            "email": "senyzy@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "senyzy\\wechat\\": "src/"
+        }
     }
-  ],
-  "require": {
-    "php": ">=7.2",
-    "doctrine/cache": "^2.1",
-    "curl/curl": "^2.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "senyzy\\wechat\\": "src/"
-    }
-  }
 }
